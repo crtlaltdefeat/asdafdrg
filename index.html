@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Fun Interactive App</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="login-container fade-in">
+  <h1>Welcome Back!</h1>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+</div>
+
+<div class="signup-container fade-in hidden">
+  <h1>Create Account</h1>
+  <input type="text" id="newUsername" placeholder="New Username">
+  <input type="password" id="newPassword" placeholder="New Password">
+  <button onclick="signup()">Sign Up</button>
+  <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
